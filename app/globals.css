@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 font-body;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.slate.100');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.brand.500');
+  border-radius: 9999px;
+}
+
+.gradient-bg {
+  background-image: linear-gradient(135deg, theme('colors.brand.500'), theme('colors.saffron.400'));
+}
+
+.card-surface {
+  @apply bg-white shadow-lg rounded-2xl border border-slate-200/60;
+}
+
+.section-heading {
+  @apply flex items-center gap-3 text-slate-900 font-semibold tracking-tight text-lg;
+}
